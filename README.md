@@ -136,7 +136,7 @@ eventValue:
  LKEvetnParamRoleLevel | String  | 角色等级
  
  示例：
- ```java
+```java
      Map<String, Object> map = new HashMap<String, Object>();
      map.put(LKEventParamName.LKEvetnParamRoleLevel, "29");
      map.put(LKEventParamName.LKEventParamRoleBalance, "1000");
@@ -144,7 +144,7 @@ eventValue:
      map.put(LKEventParamName.LKEventParamRoleUnion, "青帮");
      
      LKTrack.eventTrack(MainActivity.this, LKEventType.LK_TRACK_ROLE_UPGRADE, map);
- ```
+```
 
 6. 支付【成功、失败、取消】  
 eventType: LK\_TRACK\_PURCHASE\_SUCCESS、LK\_TRACK\_PURCHASE\_FAILURE、LK\_TRACK\_PURCHASE\_CANCEL  
