@@ -22,23 +22,6 @@
 ```
 
 ### 四、接口
->接口名以及参数都以宏定义，如果非OC原生工程调用接口过程中传递宏名不方便，也可直接传递宏定义的字符串，如：
-```java
-	 eventValues.put(LKEventParamName.LKEventParamGameId, "1111");
-   eventValues.put(LKEventParamName.LKEventParamChannelId, "2222");
-   eventValues.put(LKEventParamName.LKEventParamCompanyId, "3333");
-   eventValues.put(LKEventParamName.LKEventParamAppId, "44444");
-   eventValues.put(LKEventParamName.LKEventParamAdId, "44444");
-```
->等价于
-```java
-	eventValues.put("gameId", "1111");
-        eventValues.put("channelId", "2222");
-        eventValues.put("companyId", "3333");
-        eventValues.put("appId", "44444");
-        eventValues.put("lkAdId", "44444");
-```
-<font color=red>文档以下说明均以宏名表示字段名</font>
 
 1. 激活（必接)  
 eventType: LK\_TRACK\_ACTIVE  
@@ -54,7 +37,7 @@ eventValue:
  
  示例：
 ```java
-	 eventValues.put(LKEventParamName.LKEventParamGameId, "1111"); // 游戏必传
+   eventValues.put(LKEventParamName.LKEventParamGameId, "1111"); // 游戏必传
    eventValues.put(LKEventParamName.LKEventParamChannelId, "2222"); // 必传
    eventValues.put(LKEventParamName.LKEventParamCompanyId, "3333"); // 可不传
    eventValues.put(LKEventParamName.LKEventParamAppId, "44444"); // 必传
@@ -74,7 +57,7 @@ eventValue:
  
  示例：
 ```java
-	 eventValues.put(LKEventParamName.LKEventParamPassportId, "11112313213");// 必传
+   eventValues.put(LKEventParamName.LKEventParamPassportId, "11112313213");// 必传
    eventValues.put(LKEventParamName.LKEventParamPassportName, "13254512355");// 能获取就传，获取不到可不传
    eventValues.put(LKEventParamName.LKEventParamPassportType, "1");//可以不传
    eventValues.put(LKEventParamName.LKEventParamPassportBalance, "1000");// 能获取到就传
@@ -95,7 +78,7 @@ eventValue:
  LKEventParamRoleGender | String  | 角色性别
  
  示例：
-  ```java
+```java
      Map<String, Object> map = new HashMap<String, Object>();
      map.put(LKEventParamName.LKEventParamServerId, "1234");
      map.put(LKEventParamName.LKEventParamServerName, "大合服");
@@ -127,7 +110,7 @@ eventValue:
  LKEventParamRoleUnion | String  | 角色帮会
  
  示例：
- ```java
+```java
      Map<String, Object> map = new HashMap<String, Object>();
      map.put(LKEventParamName.LKEventParamServerId, "1234");
      map.put(LKEventParamName.LKEventParamServerName, "大合服");
@@ -142,7 +125,7 @@ eventValue:
      map.put(LKEventParamName.LKEventParamRoleUnion, "青帮");
      
      LKTrack.eventTrack(MainActivity.this, LKEventType.LK_TRACK_ENTER_GAME, map);
- ```
+```
 
 5. 角色升级（必接）  
 eventType: LK\_TRACK\_ROLE\_UPGRADE  
