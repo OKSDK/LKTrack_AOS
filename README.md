@@ -28,7 +28,7 @@ eventType: LK\_TRACK\_ACTIVE
 eventValue:
 
  参数名 | 类型 | 描述
- ----|------|----
+ -----------------------|---------|---------------------
  LKEventParamCompanyId | String  | 公司id
  LKEventParamChannelId | String  | 渠道id
  LKEventParamAdId | String  | 蓝港广告ID
