@@ -146,7 +146,6 @@ eventValue:
      LKTrack.eventTrack(MainActivity.this, LKEventType.LK_TRACK_ROLE_UPGRADE, map);
  ```
 
-
 6. 支付【成功、失败、取消】  
 eventType: LK\_TRACK\_PURCHASE\_SUCCESS、LK\_TRACK\_PURCHASE\_FAILURE、LK\_TRACK\_PURCHASE\_CANCEL  
 eventValue:
