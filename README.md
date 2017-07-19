@@ -42,6 +42,8 @@ eventValue:
    eventValues.put(LKEventParamName.LKEventParamCompanyId, "3333"); // 可不传
    eventValues.put(LKEventParamName.LKEventParamAppId, "44444"); // 必传
    eventValues.put(LKEventParamName.LKEventParamAdId, "44444"); // 有则传
+
+   LKTrack.eventTrack(MainActivity.this, LKEventType.LK_TRACK_ACTIVE, eventValues);
 ```
  
 2. 登录（必接)【成功、失败、取消】  
@@ -61,6 +63,14 @@ eventValue:
    eventValues.put(LKEventParamName.LKEventParamPassportName, "13254512355");// 能获取就传，获取不到可不传
    eventValues.put(LKEventParamName.LKEventParamPassportType, "1");//可以不传
    eventValues.put(LKEventParamName.LKEventParamPassportBalance, "1000");// 能获取到就传
+   
+   LKTrack.eventTrack(MainActivity.this, LKEventType.LK_TRACK_LOGIN_SUCCESS, eventValues);
+```
+ 登录失败或取消示例：
+```java
+   eventValues.put(LKEventParamName.LKEventParamMessage, "msg");
+   
+   LKTrack.eventTrack(MainActivity.this, LKEventType.LK_TRACK_LOGIN_FAILURE, eventValues);
 ```
 
 3. 创建角色（必接）  
