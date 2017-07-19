@@ -37,6 +37,7 @@ eventValue:
  LKEventParamGPUModle | String |显卡型号，不统计显卡信息可不传
  LKEventParamGPUMemorySize | String |显存大小，不统计显卡信息可不传
  LKEventParamGPUVersion | String | 显卡驱动版本，不统计显卡信息可不传
+
  示例：
 ```java
    eventValues.put(LKEventParamName.LKEventParamGameId, "1111"); // 游戏必传
