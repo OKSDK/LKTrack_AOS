@@ -224,7 +224,6 @@ eventValue:
  LKEventParamKey1 | String  | 预留字段1
  LKEventParamKey2 | String  | 预留字段2
  LKEventParamKey3 | String  | 预留字段3
- LKEvetnParamRoleLevel | String  | 角色等级
  
  示例：
 ```java
@@ -234,7 +233,6 @@ eventValue:
     map.put(LKEventParamName.LKEventParamKey1, "key1");
     map.put(LKEventParamName.LKEventParamKey2, "key2");
     map.put(LKEventParamName.LKEventParamKey3, "key3");
-    map.put(LKEventParamName.LKEvetnParamRoleLevel, "33");
     
     LKTrack.eventTrack(MainActivity.this, LKEventType.LK_TRACK_PASS_ENTER, map);
 ```
@@ -250,7 +248,6 @@ eventValue:
  LKEventParamKey2 | String  | 预留字段2
  LKEventParamKey3 | String  | 预留字段3
  LKEventParamResultId | String  | 结果，如：1 - 成功；2 - 失败
- LKEvetnParamRoleLevel | String  | 角色等级
  
  示例：
 ```java
