@@ -298,7 +298,6 @@ eventValue:
  LKEventParamKey1 | String  | 预留字段1
  LKEventParamKey2 | String  | 预留字段2
  LKEventParamKey3 | String  | 预留字段3
- LKEvetnParamRoleLevel | String  | 角色等级
  
    示例：
 ```objective-c
