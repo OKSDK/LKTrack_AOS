@@ -144,6 +144,9 @@ eventValue:
  参数名 | 类型 | 描述
  ----|------|----
  LKEvetnParamRoleLevel | String  | 角色等级
+ LKEventParamRoleBalance | String  | 角色余额
+ LKEventParamRoleFaction | String  | 角色阵营
+ LKEventParamRoleUnion | String  | 角色帮会
  
  示例：
 ```java
