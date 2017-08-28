@@ -29,7 +29,6 @@ eventValue:
 
  参数名 | 类型 | 描述
  -------|---------|-----------
- LKEventParamCompanyId | String  | 公司id
  LKEventParamChannelId | String  | 渠道id
  LKEventParamAdId | String  | 蓝港广告ID
  LKEventParamGameId | String  | 游戏ID
@@ -42,7 +41,6 @@ eventValue:
 ```java
    eventValues.put(LKEventParamName.LKEventParamGameId, "1111"); // 游戏必传
    eventValues.put(LKEventParamName.LKEventParamChannelId, "2222"); // 必传
-   eventValues.put(LKEventParamName.LKEventParamCompanyId, "3333"); // 可不传
    eventValues.put(LKEventParamName.LKEventParamAppId, "44444"); // 必传
    eventValues.put(LKEventParamName.LKEventParamAdId, "44444"); // 有则传
 
