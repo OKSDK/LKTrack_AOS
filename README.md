@@ -9,15 +9,15 @@
 请务必在游戏工程同名系统方法中调用
 ```java
   public static void onDestory() {
-        LKInAppTrack.onDestory(this);
+        LKTrack.onDestory(this);
     }
 
     public static void onResume() {
-        LKInAppTrack.onResume(this);
+        LKTrack.onResume(this);
     }
 
     public static void onPause() {
-        LKInAppTrack.onPause(this);
+        LKTrack.onPause(this);
     }
 ```
 
