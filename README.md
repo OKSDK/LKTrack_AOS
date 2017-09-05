@@ -304,8 +304,8 @@ eventValue:
  LKEventParamKey3 | String  | 预留字段3
  
    示例：
-```objective-c
-    Map<String, Object> map = new HashMap<String, Object>();
+```java
+    Map<String, Object> map = new HashMap<String, Object>();
     map.put(LKEventParamName.LKEventParamActivityTime, "11211");
     map.put(LKEventParamName.LKEventParamActivityId, "1");
     map.put(LKEventParamName.LKEventParamActivityType1, "1");
@@ -319,6 +319,7 @@ eventValue:
     LKTrack.eventTrack(MainActivity.this, LKEventType.LK_TRACK_ACTIVITY, map);
 ```
 ### 四、附录：
+```java
 public abstract interface LKEventType {
     public static final String LK_TRACK_ACTIVE = "lk_sdk_active";
     public static final String LK_TRACK_LOGIN = "lk_sdk_login";
@@ -400,4 +401,4 @@ public class LKEventParamName {
     public static final String LKEventParamActivityType2 = "lk_track_product_activity_type2";
     public static final String LKEventParamActivityType3 = "lk_track_product_activity_type3";
 }
-
+```
