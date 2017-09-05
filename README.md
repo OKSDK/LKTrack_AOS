@@ -21,7 +21,7 @@
     }
 ```
 
-### 四、接口
+### 三、接口
 
 1. 激活（必接)  
 eventType: LK\_TRACK\_ACTIVE  
@@ -318,4 +318,86 @@ eventValue:
 
     LKTrack.eventTrack(MainActivity.this, LKEventType.LK_TRACK_ACTIVITY, map);
 ```
-    
+### 四、附录：
+public abstract interface LKEventType {
+    public static final String LK_TRACK_ACTIVE = "lk_sdk_active";
+    public static final String LK_TRACK_LOGIN = "lk_sdk_login";
+    public static final String LK_TRACK_LOGIN_SUCCESS = "lk_sdk_login_success";
+    public static final String LK_TRACK_LOGIN_FAIL = "lk_sdk_login_fail";
+    public static final String LK_TRACK_LOGIN_CANCEL = "lk_sdk_login_cancel";
+    public static final String LK_TRACK_LOGOUT = "lk_sdk_logout";
+    public static final String LK_TRACK_CREATE_ROLE = "lk_sdk_create_role";
+    public static final String LK_TRACK_ENTER_GAME = "lk_sdk_enter_game";
+    public static final String LK_TRACK_ROLE_UPGRADE = "lk_sdk_role_upgrade";
+    public static final String LK_TRACK_PURCHASE = "lk_sdk_purchase";
+    public static final String LK_TRACK_PURCHASE_SUCCESS = "lk_sdk_purchase_success";
+    public static final String LK_TRACK_PURCHASE_FAIL = "lk_sdk_purchase_fail";
+    public static final String LK_TRACK_PURCHASE_CANCEL = "lk_sdk_purchase_cancel";
+    public static final String LK_TRACK_USE_ITEM = "lk_sdk_use_item";
+    public static final String LK_TRACK_REWARD = "lk_sdk_reward";
+    public static final String LK_TRACK_CUSTOM = "lk_sdk_custom";
+    public static final String LK_TRACK_PASS_ENTER = "lk_sdk_pass_enter";
+    public static final String LK_TRACK_PASS_RESULT = "lk_sdk_pass_result";
+    public static final String LK_TRACK_FIXED_EVENT = "lk_sdk_fixed_event";
+    public static final String LK_TRACK_ACTIVITY = "lk_sdk_activity";
+}
+
+public class LKEventParamName {
+    public static final String LKEventParamAdId = "lk_track_ad_id";
+    public static final String LKEventParamAppId = "lk_track_app_id";
+    public static final String LKEventParamGameId = "lk_track_game_id";
+    public static final String LKEventParamChannelId = "lk_track_channel_id";
+
+    public static final String LKEventParamGPUModel = "lk_track_gpu_model";
+    public static final String LKEventParamGPUMemorySize = "lk_track_gpu_memory_size";
+    public static final String LKEventParamGPUVersion = "lk_track_gpu_version";
+
+    public static final String LKEventParamPassportId = "lk_track_passport_id";
+    public static final String LKEventParamPassportName = "lk_track_passport_name";
+    public static final String LKEventParamPassportType = "lk_track_passport_type";
+    public static final String LKEventParamPassportBalance = "lk_track_passport_balance";
+
+    public static final String LKEventParamServerId = "lk_track_server_id";
+    public static final String LKEventParamServerName = "lk_track_server_name";
+    public static final String LKEventParamRoleId = "lk_track_role_id";
+    public static final String LKEventParamRoleName = "lk_track_role_name";
+    public static final String LKEvetnParamRoleLevel = "lk_track_role_level";
+    public static final String LKEventParamCreateRoleTime = "lk_track_role_create_time";
+    public static final String LKEventParamDelRoleTime = "lk_track_role_del_time";
+    public static final String LKEventParamRoleUnion = "lk_track_role_union";
+    public static final String LKEventParamRoleBalance = "lk_track_role_balance";
+    public static final String LKEventParamRoleCareer = "lk_track_role_career";
+    public static final String LKEventParamRoleGender = "lk_track_role_gender";
+    public static final String LKEventParamRoleFaction = "lk_track_role_faction";
+
+    public static final String LKEventParamMoneyAmount = "lk_track_money_amount";
+    public static final String LKEventParamProductId = "lk_track_product_id";
+    public static final String LKEventParamProductName = "lk_track_product_name";
+
+    public static final String LKEventParamMoney1 = "lk_track_money1";
+    public static final String LKEventParamMoney2 = "lk_track_money2";
+    public static final String LKEventParamExperience = "lk_track_exprience";
+    public static final String LKEventParamMessage = "lk_track_message";
+
+    public static final String LKEventParamCustomInfo = "lk_track_customInfo";
+
+    public static final String LKEventParamPassId = "lk_track_pass_id";
+    public static final String LKEventParamResultId = "lk_track_result_id";
+    public static final String LKEventParamEnterTime = "lk_track_enter_time";
+    public static final String LKEventParamResultTime = "lk_track_result_time";
+    public static final String LKEventParamKey1 = "lk_track_key1";
+    public static final String LKEventParamKey2 = "lk_track_key2";
+    public static final String LKEventParamKey3 = "lk_track_key3";
+
+    public static final String LKEventParamEventGid = "lk_track_event_gid";
+    public static final String LKEventParamEventPid = "lk_track_event_pid";
+    public static final String LKEventParamEventDesc = "LKEventParamEventDesc";
+
+    public static final String LKEventParamOperationType = "lk_track_operation_type";
+    public static final String LKEventParamActivityTime = "lk_track_product_activity_time";
+    public static final String LKEventParamActivityId = "lk_track_product_activity_id";
+    public static final String LKEventParamActivityType1 = "lk_track_product_activity_type1";
+    public static final String LKEventParamActivityType2 = "lk_track_product_activity_type2";
+    public static final String LKEventParamActivityType3 = "lk_track_product_activity_type3";
+}
+
