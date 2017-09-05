@@ -3,7 +3,7 @@
 # 统计SDK
 ----
 ### 一、环境配置
-游戏或app接入统计SDK，需将压缩包中的jar包放到自己工程的lib目录下，将压缩包中assets目录下的配置文件放到自己工程对应的assets目录下（如果不放配置文件默认用中国大陆的服务器），并将Andoridmanifest.txt文件中的权限添加到自己工程Androidmanifest.xml文件中。
+游戏或app接入统计SDK，需将压缩包中的jar包放到自己工程的lib目录下，**在压缩包中找对应地区的配置文件放到自己工程对应的assets目录下**（如果不放配置文件默认用中国大陆的服务器），并将Andoridmanifest.txt文件中的权限添加到自己工程Androidmanifest.xml文件中。
 
 ### 二、系统生命周期方法
 请务必在游戏工程同名系统方法中调用
