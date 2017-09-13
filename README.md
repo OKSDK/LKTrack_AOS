@@ -246,6 +246,7 @@ eventValue:
 
  参数名 | 类型 | 描述
  ----|------|----
+ LKEventParamEnterTime | String  | 进入关卡时间
  LKEventParamResultTime | String  | 完成关卡时间
  LKEventParamPassId | String  | 关卡ID（如：坐骑副本，装备副本）
  LKEventParamKey1 | String  | 预留字段1
