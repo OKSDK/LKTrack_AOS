@@ -8,8 +8,8 @@
 ### 二、系统生命周期方法
 请务必在游戏工程同名系统方法中调用
 ```java
-  public static void onDestory() {
-        LKTrack.onDestory(this);
+  public static void onDestroy() {
+        LKTrack.onDestroy(this);
     }
 
     public static void onResume() {
