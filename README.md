@@ -393,7 +393,7 @@ public class LKEventParamName {
 
     public static final String LKEventParamEventGid = "lk_track_event_gid";
     public static final String LKEventParamEventPid = "lk_track_event_pid";
-    public static final String LKEventParamEventDesc = "LKEventParamEventDesc";
+    public static final String LKEventParamEventDesc = "lk_track_event_desc";
 
     public static final String LKEventParamOperationType = "lk_track_operation_type";
     public static final String LKEventParamActivityTime = "lk_track_product_activity_time";
