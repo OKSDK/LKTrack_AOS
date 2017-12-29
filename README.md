@@ -27,15 +27,15 @@
 eventType: LK\_TRACK\_ACTIVE  
 eventValue:
 
- 参数名 | 类型 | 描述
+ 参数名 | 类型 | 描述 | 是否必传
  -------|---------|-----------
- LKEventParamChannelId | String  | 渠道id
- LKEventParamAdId | String  | 蓝港广告ID，可传空
- LKEventParamGameId | String  | 游戏ID
- LKEventParamAppId | String  | 应用ID
- LKEventParamGPUModle | String |显卡型号，不统计显卡信息可不传
- LKEventParamGPUMemorySize | String |显存大小，不统计显卡信息可不传
- LKEventParamGPUVersion | String | 显卡驱动版本，不统计显卡信息可不传
+ LKEventParamChannelId | String  | 渠道id | 必传
+ LKEventParamAdId | String  | 蓝港广告ID，可传空 | 非必传
+ LKEventParamGameId | String  | 游戏ID | 必传
+ LKEventParamAppId | String  | 应用ID |必传
+ LKEventParamGPUModle | String |显卡型号，不统计显卡信息可不传 | 非必传
+ LKEventParamGPUMemorySize | String |显存大小，不统计显卡信息可不传 | 非必传
+ LKEventParamGPUVersion | String | 显卡驱动版本，不统计显卡信息可不传 | 非必传
 
  示例：
 ```java
@@ -51,17 +51,17 @@ eventValue:
 eventType: LK\_TRACK\_LOGIN\_SUCCESS  、LK\_TRACK\_LOGIN\_FAILURE  、LK\_TRACK_LOGIN\_CANCEL  
 eventValue:  
 
- 参数名 | 类型 | 描述
+ 参数名 | 类型 | 描述 | 是否必传
  ----|------|----
- LKEventParamPassportId | String  | 游戏内的userid
- LKEventParamPassportName | String  | 游戏内的username
- LKEventParamPassportType | String  | 账号类型
- LKEventParamPassportBalance | String  | 账号余额
+ LKEventParamPassportId | String  | 游戏内的userid | 必传
+ LKEventParamPassportName | String  | 游戏内的username | 必传
+ LKEventParamPassportType | String  | 账号类型 | 非必传
+ LKEventParamPassportBalance | String  | 账号余额 | 非必传
  
  示例：
 ```java
    eventValues.put(LKEventParamName.LKEventParamPassportId, "11112313213");// 必传
-   eventValues.put(LKEventParamName.LKEventParamPassportName, "13254512355");// 能获取就传，获取不到可不传
+   eventValues.put(LKEventParamName.LKEventParamPassportName, "13254512355");// 必传
    eventValues.put(LKEventParamName.LKEventParamPassportType, "1");//可以不传
    eventValues.put(LKEventParamName.LKEventParamPassportBalance, "1000");// 能获取到就传
    
@@ -74,19 +74,19 @@ eventValue:
    LKTrack.eventTrack(MainActivity.this, LKEventType.LK_TRACK_LOGIN_FAILURE, eventValues);
 ```
 
-3. 创建角色（必接）  
+3. 创建角色（非必接）  
 eventType: LK\_TRACK\_CREATE\_ROLE  
 eventValue:
 
- 参数名 | 类型 | 描述
+ 参数名 | 类型 | 描述 | 是否必传
  ----|------|----
- LKEventParamServerId | String  | 区服id
- LKEventParamServerName | String  | 区服名称
- LKEventParamRoleId | String  | 角色id
- LKEventParamRoleName | String  | 角色名称
- LKEventParamCreateRoleTime | String  | 创建角色时间
- LKEventParamRoleCareer | String  | 角色职业
- LKEventParamRoleGender | String  | 角色性别
+ LKEventParamServerId | String  | 区服id | 必传
+ LKEventParamServerName | String  | 区服名称 | 必传
+ LKEventParamRoleId | String  | 角色id | 必传
+ LKEventParamRoleName | String  | 角色名称 | 必传
+ LKEventParamCreateRoleTime | String  | 创建角色时间 | 非必传
+ LKEventParamRoleCareer | String  | 角色职业 | 非必传
+ LKEventParamRoleGender | String  | 角色性别 | 非必传
  
  示例：
 ```java
@@ -106,19 +106,19 @@ eventValue:
 eventType: LK\_TRACK\_ENTER\_GAME  
 eventValue:
 
- 参数名 | 类型 | 描述
+ 参数名 | 类型 | 描述 | 是否必传
  ----|------|----
- LKEventParamServerId | String  | 区服id
- LKEventParamServerName | String  | 区服名称
- LKEventParamRoleId | String  | 角色id
- LKEventParamRoleName | String  | 角色名称
- LKEvetnParamRoleLevel | String  | 角色等级
- LKEventParamCreateRoleTime | String  | 创建角色时间
- LKEventParamRoleBalance | String  | 角色余额
- LKEventParamRoleCareer | String  | 角色职业
- LKEventParamRoleGender | String  | 角色性别
- LKEventParamRoleFaction | String  | 角色阵营
- LKEventParamRoleUnion | String  | 角色帮会
+ LKEventParamServerId | String  | 区服id | 必传
+ LKEventParamServerName | String  | 区服名称 | 必传
+ LKEventParamRoleId | String  | 角色id | 必传
+ LKEventParamRoleName | String  | 角色名称 | 必传
+ LKEvetnParamRoleLevel | String  | 角色等级 | 必传
+ LKEventParamCreateRoleTime | String  | 创建角色时间 | 非必传
+ LKEventParamRoleBalance | String  | 角色余额 | 非必传
+ LKEventParamRoleCareer | String  | 角色职业 | 非必传
+ LKEventParamRoleGender | String  | 角色性别 | 非必传
+ LKEventParamRoleFaction | String  | 角色阵营 | 非必传
+ LKEventParamRoleUnion | String  | 角色帮会 | 非必传
  
  示例：
 ```java
@@ -138,16 +138,16 @@ eventValue:
      LKTrack.eventTrack(MainActivity.this, LKEventType.LK_TRACK_ENTER_GAME, map);
 ```
 
-5. 角色升级（必接）  
+5. 角色升级（必接）  
 eventType: LK\_TRACK\_ROLE\_UPGRADE  
 eventValue:
 
- 参数名 | 类型 | 描述
+ 参数名 | 类型 | 描述 | 是否必传
  ----|------|----
- LKEvetnParamRoleLevel | String  | 角色等级
- LKEventParamRoleBalance | String  | 角色余额
- LKEventParamRoleFaction | String  | 角色阵营
- LKEventParamRoleUnion | String  | 角色帮会
+ LKEvetnParamRoleLevel | String  | 角色等级 | 必传
+ LKEventParamRoleBalance | String  | 角色余额 | 非必传
+ LKEventParamRoleFaction | String  | 角色阵营 | 非必传
+ LKEventParamRoleUnion | String  | 角色帮会 | 非必传
  
  示例：
 ```java
@@ -160,15 +160,15 @@ eventValue:
      LKTrack.eventTrack(MainActivity.this, LKEventType.LK_TRACK_ROLE_UPGRADE, map);
 ```
 
-6. 支付【成功、失败、取消】  
+6. 支付【成功、失败、取消】（非必接）  
 eventType: LK\_TRACK\_PURCHASE\_SUCCESS、LK\_TRACK\_PURCHASE\_FAILURE、LK\_TRACK\_PURCHASE\_CANCEL  
 eventValue:
 
- 参数名 | 类型 | 描述
+ 参数名 | 类型 | 描述 | 是否必传
  ----|------|----
- LKEventParamMoneyAmount | String  | 付费金额
- LKEventParamProductName | String  | 商品名称
- LKEventParamProductId | String  | 商品id
+ LKEventParamMoneyAmount | String  | 付费金额 | 非必传
+ LKEventParamProductName | String  | 商品名称 | 非必传
+ LKEventParamProductId | String  | 商品id | 非必传
  
  示例：
 ```java
@@ -184,11 +184,11 @@ eventValue:
 eventType: LK\_TRACK\_LOGOUT  
 eventValue:
 
- 参数名 | 类型 | 描述
+ 参数名 | 类型 | 描述 | 是否必传
  ----|------|----
- LKEventParamMoney1 | String  | 当前下线时的金钱数1
- LKEventParamMoney2 | String  | 当前下线时的金钱数2
- LKEventParamExperience | String  | 当前经验值
+ LKEventParamMoney1 | String  | 当前下线时的金钱数1 | 非必传
+ LKEventParamMoney2 | String  | 当前下线时的金钱数2 | 非必传
+ LKEventParamExperience | String  | 当前经验值 | 非必传
  
  示例：
  
@@ -217,17 +217,17 @@ eventValue:
     LKTrack.eventTrack(MainActivity.this, LKEventType.LK_TRACK_CUSTOM, map);
 ```
 
-9. 进入关卡（必接）  
+9. 进入关卡（非必接）  
 eventType: LK\_TRACK\_PASS\_ENTER  
 eventValue:
 
- 参数名 | 类型 | 描述
+ 参数名 | 类型 | 描述 | 是否必传
  ----|------|----
- LKEventParamEnterTime | String  | 进入关卡时间
- LKEventParamPassId | String  | 关卡ID（如：坐骑副本，装备副本）
- LKEventParamKey1 | String  | 预留字段1
- LKEventParamKey2 | String  | 预留字段2
- LKEventParamKey3 | String  | 预留字段3
+ LKEventParamEnterTime | String  | 进入关卡时间 | 必传
+ LKEventParamPassId | String  | 关卡ID（如：坐骑副本，装备副本） | 必传
+ LKEventParamKey1 | String  | 预留字段1 | 非必传
+ LKEventParamKey2 | String  | 预留字段2 | 非必传
+ LKEventParamKey3 | String  | 预留字段3 | 非必传
  
  示例：
 ```java
@@ -240,19 +240,19 @@ eventValue:
     
     LKTrack.eventTrack(MainActivity.this, LKEventType.LK_TRACK_PASS_ENTER, map);
 ```
-10. 完成关卡（必接）  
+10. 完成关卡（非必接）  
 eventType: LK\_TRACK\_PASS\_RESULT  
 eventValue:
 
- 参数名 | 类型 | 描述
+ 参数名 | 类型 | 描述 | 是否必传
  ----|------|----
- LKEventParamEnterTime | String  | 进入关卡时间
- LKEventParamResultTime | String  | 完成关卡时间
- LKEventParamPassId | String  | 关卡ID（如：坐骑副本，装备副本）
- LKEventParamKey1 | String  | 预留字段1
- LKEventParamKey2 | String  | 预留字段2
- LKEventParamKey3 | String  | 预留字段3
- LKEventParamResultId | String  | 结果，如：1 - 成功；2 - 失败
+ LKEventParamEnterTime | String  | 进入关卡时间 | 必传
+ LKEventParamResultTime | String  | 完成关卡时间 | 必传
+ LKEventParamPassId | String  | 关卡ID（如：坐骑副本，装备副本） | 必传
+ LKEventParamKey1 | String  | 预留字段1 | 非必传
+ LKEventParamKey2 | String  | 预留字段2 | 非必传
+ LKEventParamKey3 | String  | 预留字段3 | 非必传
+ LKEventParamResultId | String  | 结果，如：1 - 成功；2 - 失败 | 非必传
  
  示例：
 ```java
@@ -268,15 +268,15 @@ eventValue:
     LKTrack.eventTrack(MainActivity.this, LKEventType.LK_TRACK_PASS_RESULT, map);
 ```
     
-11. 固定事件  
+11. 固定事件 （非必接） 
 eventType: LK\_TRACK\_FIXED\_EVENT  
 eventValue:
 
- 参数名 | 类型 | 描述
+ 参数名 | 类型 | 描述 | 是否必传
  ----|------|----
- LKEventParamEventGid | String  | 事件ID
- LKEventParamEventPid | String  | 事件父ID
- LKEventParamEventDesc | String  | 事件描述
+ LKEventParamEventGid | String  | 事件ID | 必传
+ LKEventParamEventPid | String  | 事件父ID | 非必传
+ LKEventParamEventDesc | String  | 事件描述 | 非必传
  
 示例：
 ```java
@@ -288,21 +288,21 @@ eventValue:
     LKTrack.eventTrack(MainActivity.this, LKEventType.LK_TRACK_FIXED_EVENT, map2);
 ```
  
-12. 日常运营活动  
-eventType: LK\_TRACK\_SDK\_ACTIVITY  
+12. 日常运营活动（非必接）
+eventType: LK\_TRACK\_SDK\_ACTIVITY  
 eventValue:
 
  参数名 | 类型 | 描述
  ----|------|----
- LKEventParamActivityTime | String  | 参与活动时间，每变动一次记录一次
- LKEventParamActivityId | String  | 活动ID
- LKEventParamActivityType1 | String  | 活动子类型1（如：日常、运营、商业化）
- LKEventParamActivityType2 | String  | 活动子类型2（如：日常充值活动中A活动）
- LKEventParamActivityType3 | String  | 活动子类型3（如：日常充值活动中A活动下的A1项目）
- LKEventParamOperationType | String  | 操作类型（1 - 查看；2 - 参加；3 - 完成）
- LKEventParamKey1 | String  | 预留字段1
- LKEventParamKey2 | String  | 预留字段2
- LKEventParamKey3 | String  | 预留字段3
+ LKEventParamActivityTime | String  | 参与活动时间，每变动一次记录一次 | 必传
+ LKEventParamActivityId | String  | 活动ID | 必传
+ LKEventParamActivityType1 | String  | 活动子类型1（如：日常、运营、商业化） | 非必传
+ LKEventParamActivityType2 | String  | 活动子类型2（如：日常充值活动中A活动） | 非必传
+ LKEventParamActivityType3 | String  | 活动子类型3（如：日常充值活动中A活动下的A1项目） | 非必传
+ LKEventParamOperationType | String  | 操作类型（1 - 查看；2 - 参加；3 - 完成）|必传
+ LKEventParamKey1 | String  | 预留字段1 | 非必传
+ LKEventParamKey2 | String  | 预留字段2 | 非必传
+ LKEventParamKey3 | String  | 预留字段3 | 非必传
  
    示例：
 ```java
