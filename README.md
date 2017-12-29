@@ -30,9 +30,9 @@ eventValue:
  参数名 | 类型 | 描述 | 是否必传
  --------|--------|--------|--------
  LKEventParamChannelId | String  | 渠道id | 必传
- LKEventParamAdId | String  | 蓝港广告ID，可传空 | 非必传
  LKEventParamGameId | String  | 游戏ID | 必传
  LKEventParamAppId | String  | 应用ID |必传
+ LKEventParamAdId | String  | 蓝港广告ID，可传空 | 非必传
  LKEventParamGPUModle | String |显卡型号，不统计显卡信息可不传 | 非必传
  LKEventParamGPUMemorySize | String |显存大小，不统计显卡信息可不传 | 非必传
  LKEventParamGPUVersion | String | 显卡驱动版本，不统计显卡信息可不传 | 非必传
@@ -205,9 +205,9 @@ eventValue:
 eventType: LK\_TRACK\_CUSTOM  
 eventValue:
 
- 参数名 | 类型 | 描述
- ----|------|----|------
- LKEventParamCustomInfo | String  | 自定义参数（json字符串）
+ 参数名 | 类型 | 描述 | 是否必传
+ ----|------|-----|------
+ LKEventParamCustomInfo | String  | 自定义参数（json字符串） | 必传
  
  示例：
  ```java
