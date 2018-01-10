@@ -8,17 +8,13 @@
 ### 二、系统生命周期方法
 请务必在游戏工程同名系统方法中调用
 ```java
+  public static void onStop() {
+        LKTrack.onStop(this);
+    }
+    
   public static void onDestroy() {
         LKTrack.onDestroy(this);
-    }
-
-    public static void onResume() {
-        LKTrack.onResume(this);
-    }
-
-    public static void onPause() {
-        LKTrack.onPause(this);
-    }
+    }  
 ```
 
 ### 三、接口
@@ -33,6 +29,7 @@ eventValue:
  LKEventParamGameId | String  | 游戏ID | 必传
  LKEventParamAppId | String  | 应用ID |必传
  LKEventParamAdId | String  | 蓝港广告ID，可传空 | 非必传
+ LKEventParamPackSuffix | String | 统计时会将此字段的字追加到包名后面作为包名传给服务器，官网包传 .linekong, google包传.google, ios包传.appstore | 非必传
  LKEventParamGPUModle | String |显卡型号，不统计显卡信息可不传 | 非必传
  LKEventParamGPUMemorySize | String |显存大小，不统计显卡信息可不传 | 非必传
  LKEventParamGPUVersion | String | 显卡驱动版本，不统计显卡信息可不传 | 非必传
@@ -349,7 +346,8 @@ public class LKEventParamName {
     public static final String LKEventParamAppId = "lk_track_app_id";
     public static final String LKEventParamGameId = "lk_track_game_id";
     public static final String LKEventParamChannelId = "lk_track_channel_id";
-
+    
+    public static final String LKEventParamPackSuffix = "lk_track_pack_suffix";
     public static final String LKEventParamGPUModel = "lk_track_gpu_model";
     public static final String LKEventParamGPUMemorySize = "lk_track_gpu_memory_size";
     public static final String LKEventParamGPUVersion = "lk_track_gpu_version";
