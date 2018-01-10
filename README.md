@@ -33,6 +33,8 @@ eventValue:
  LKEventParamGPUModle | String |显卡型号，不统计显卡信息可不传 | 非必传
  LKEventParamGPUMemorySize | String |显存大小，不统计显卡信息可不传 | 非必传
  LKEventParamGPUVersion | String | 显卡驱动版本，不统计显卡信息可不传 | 非必传
+ 
+ #### 注意：LKEventParamPackSuffix 传入的值为： 官网包传 .linekong, google包传.google, ios包传.appstore
 
  示例：
 ```java
