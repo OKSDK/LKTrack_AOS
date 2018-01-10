@@ -29,7 +29,7 @@ eventValue:
  LKEventParamGameId | String  | 游戏ID | 必传
  LKEventParamAppId | String  | 应用ID |必传
  LKEventParamAdId | String  | 蓝港广告ID，可传空 | 非必传
- LKEventParamPackSuffix | String | 统计时会将此字段的字追加到包名后面作为包名传给服务器，官网包传 .linekong, google包传.google, ios包传.appstore | 非必传
+ LKEventParamPackSuffix | String | 统计时会将此字段的字追加到包名后面作为包名传给服务器 | 非必传
  LKEventParamGPUModle | String |显卡型号，不统计显卡信息可不传 | 非必传
  LKEventParamGPUMemorySize | String |显存大小，不统计显卡信息可不传 | 非必传
  LKEventParamGPUVersion | String | 显卡驱动版本，不统计显卡信息可不传 | 非必传
