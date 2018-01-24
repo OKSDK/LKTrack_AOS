@@ -14,7 +14,14 @@
     
   public static void onDestroy() {
         LKTrack.onDestroy(this);
-    }  
+    }   
+   
+  /**
+    * 如果游戏targetSdkVersion 小于23 可以不调用此方法，大于或等于23的必须调用此方法，否则获取不到设备唯一标识imei
+    * */
+  public static void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults){
+        LKTrack.onRequestPermissionsResult(requestCode, permissions, grantResults)
+  }
 ```
 
 ### 三、接口
