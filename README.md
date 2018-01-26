@@ -80,7 +80,7 @@ eventValue:
    LKTrack.eventTrack(MainActivity.this, LKEventType.LK_TRACK_LOGIN_FAILURE, eventValues);
 ```
 
-3. 创建角色（非必接）  
+3. 创建角色（必接）  
 eventType: LK\_TRACK\_CREATE\_ROLE  
 eventValue:
 
@@ -223,7 +223,7 @@ eventValue:
     LKTrack.eventTrack(MainActivity.this, LKEventType.LK_TRACK_CUSTOM, map);
 ```
 
-9. 进入关卡（非必接）  
+9. 进入关卡（必接）  
 eventType: LK\_TRACK\_PASS\_ENTER  
 eventValue:
 
@@ -246,7 +246,7 @@ eventValue:
     
     LKTrack.eventTrack(MainActivity.this, LKEventType.LK_TRACK_PASS_ENTER, map);
 ```
-10. 完成关卡（非必接）  
+10. 完成关卡（必接）  
 eventType: LK\_TRACK\_PASS\_RESULT  
 eventValue:
 
