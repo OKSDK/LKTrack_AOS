@@ -186,7 +186,7 @@ eventValue:
      LKTrack.eventTrack(MainActivity.this, LKEventType.LK_TRACK_PURCHASE_SUCCESS, map);
  ```
 
-7. 登出  
+7. 登出（必接）  
 eventType: LK\_TRACK\_LOGOUT  
 eventValue:
 
