@@ -8,18 +8,18 @@
 ### 二、系统生命周期方法
 请务必在游戏工程同名系统方法中调用
 ```java
-  public static void onStop() {
+  public void onStop() {
         LKTrack.onStop(this);
     }
     
-  public static void onDestroy() {
+  public void onDestroy() {
         LKTrack.onDestroy(this);
     }   
    
   /**
     * 如果游戏targetSdkVersion 小于23 可以不调用此方法，大于或等于23的必须调用此方法，否则获取不到设备唯一标识imei
     * */
-  public static void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults){
+  public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults){
         LKTrack.onRequestPermissionsResult(requestCode, permissions, grantResults)
   }
 ```
