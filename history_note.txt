@@ -1,3 +1,8 @@
+# v1.3.8
+1.将工程中创建的HashMap对象改成创建ConcurrentHashMap对象来解决 java.util.ConcurrentModificationException 问题
+2.每次读取数据库数据前加一个判断，判断数据是否是打开状态，打开则读取，未打开则重新打卡后再读取,
+  修复java.lang.IllegalStateException: attempt to re-open an already-closed object: 问题
+
 # v1.3.7
 1.解决在6.0以上系统上获取不到imei问题
 2.添加 onRequestPermissionsResult 方法调用
