@@ -1,3 +1,7 @@
+# v1.4.0
+1、进入关卡和完成关卡中添加 角色职业统计
+2、进入关卡和完成关卡接口中添加一个class字段，来区分是关卡、还是任务
+
 # v1.3.8
 1.将工程中创建的HashMap对象改成创建ConcurrentHashMap对象来解决 java.util.ConcurrentModificationException 问题
 2.每次读取数据库数据前加一个判断，判断数据是否是打开状态，打开则读取，未打开则重新打卡后再读取,
