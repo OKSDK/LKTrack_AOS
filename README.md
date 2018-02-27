@@ -231,6 +231,7 @@ eventValue:
  ----|------|----|-----
  LKEventParamEnterTime | String  | 进入关卡时间 | 必传
  LKEventParamPassId | String  | 关卡ID（如：坐骑副本，装备副本） | 必传
+ LKEventParamClass | String | 事件细分类，1：关卡，2：任务（如果统计进入关卡传入1， 如果统计开始任务传2） | 必传
  LKEventParamKey1 | String  | 预留字段1 | 非必传
  LKEventParamKey2 | String  | 预留字段2 | 非必传
  LKEventParamKey3 | String  | 预留字段3 | 非必传
@@ -240,7 +241,8 @@ eventValue:
     Map<String, Object> map = new HashMap<String, Object>();
     map.put(LKEventParamName.LKEventParamEnterTime, "1612222454");
     map.put(LKEventParamName.LKEventParamPassId, "22");
-    map.put(LKEventParamName.LKEventParamKey1, "key1");
+    map.put(LKEventParamName.LKEventParamClass, "1");
+    map.put(LKEventParamName.LKEventParamKey1, "key1");
     map.put(LKEventParamName.LKEventParamKey2, "key2");
     map.put(LKEventParamName.LKEventParamKey3, "key3");
     
@@ -255,6 +257,7 @@ eventValue:
  LKEventParamEnterTime | String  | 进入关卡时间 | 必传
  LKEventParamResultTime | String  | 完成关卡时间 | 必传
  LKEventParamPassId | String  | 关卡ID（如：坐骑副本，装备副本） | 必传
+ LKEventParamClass | String | 事件细分类，1：关卡，2：任务（如果统计完成关卡传入1， 如果统计完成任务传2） | 必传
  LKEventParamKey1 | String  | 预留字段1 | 非必传
  LKEventParamKey2 | String  | 预留字段2 | 非必传
  LKEventParamKey3 | String  | 预留字段3 | 非必传
@@ -266,7 +269,8 @@ eventValue:
     map.put(LKEventParamName.LKEventParamEnterTime, "11211");
     map.put(LKEventParamName.LKEventParamResultTime, "100");
     map.put(LKEventParamName.LKEventParamPassId, "1");
-    map.put(LKEventParamName.LKEventParamResultId, "1");
+    map.put(LKEventParamName.LKEventParamClass, "1");
+    map.put(LKEventParamName.LKEventParamResultId, "1");
     map.put(LKEventParamName.LKEventParamKey1, "key1");
     map.put(LKEventParamName.LKEventParamKey2, "key2");
     map.put(LKEventParamName.LKEventParamKey3, "key3");
@@ -391,6 +395,7 @@ public class LKEventParamName {
     public static final String LKEventParamCustomInfo = "lk_track_customInfo";
 
     public static final String LKEventParamPassId = "lk_track_pass_id";
+    public static final String LKEventParamClass = "lk_track_class";
     public static final String LKEventParamResultId = "lk_track_result_id";
     public static final String LKEventParamEnterTime = "lk_track_enter_time";
     public static final String LKEventParamResultTime = "lk_track_result_time";
