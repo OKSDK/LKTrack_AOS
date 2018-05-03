@@ -3,7 +3,8 @@
 2.修复登出方法中传给服务器的登录时间和登出时间一样的问题
 3.将海外的接入和国内的接入分开用两个jar包，两个jar包的区别：
      海外：不自动获取imei，添加了setIMEI()方法，去掉了 onRequestPermissionsResult方法，用户可通过etIMEI()方法设置到SDK中。
-     国内：自动获取imei， 没有setIMEI()方法，需要调用onRequestPermissionsResult方法（不调用获取不到imei）。
+     国内：自动获取imei， 没有setIMEI()方法，需要调用onRequestPermissionsResult方法（不调用获取不到imei）,需要自行在manifest中添加如下权限。
+           <uses-permission android:name="android.permission.READ_PHONE_STATE" />
   说明：海外为了方便也可以用国内的jar包，但是不建议用在上google商店的包，用在google商店有被下架的风险。
 
 # v1.4.2
