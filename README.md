@@ -16,7 +16,7 @@
         LKTrack.onDestroy(this);
     }      
 ```
- ###### 说明：下面这个方法海外不获取imei无需调用，如果想统计imei 可以通过 LKTrack.setIMEI(String imei)方法将imei传入统计SDK
+ ##### 说明：下面这个方法海外不获取imei无需调用，如果想统计imei 可以通过 LKTrack.setIMEI(String imei)方法将imei传入统计SDK
  ```java
  /**
     * 此方法 lk_statistics_vx.x.x.jar有，需要调用，lk_statistics_vx.x.x_no_imei.jar中没有，无需调用
