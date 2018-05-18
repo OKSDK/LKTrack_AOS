@@ -14,17 +14,21 @@
     
   public void onDestroy() {
         LKTrack.onDestroy(this);
-    }   
-   
-  /**
+    }      
+```
+ #### 说明：下面这个方法海外不获取imei无需调用，如果想统计imei 可以通过 LKTrack.setIMEI(String imei)方法将imei传入统计SDK
+ ```java
+ /**
     * 此方法 lk_statistics_vx.x.x.jar有，需要调用，lk_statistics_vx.x.x_no_imei.jar中没有，无需调用
+    *
+    * 需要在Androidmanifest.xml文件中声明 <uses-permission android:name="android.permission.READ_PHONE_STATE"/>权限
     *
     * 如果游戏targetSdkVersion 小于23 可以不调用此方法，大于或等于23的必须调用此方法，否则获取不到设备唯一标识imei
     * */
   public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults){
         LKTrack.onRequestPermissionsResult(requestCode, permissions, grantResults)
   }
-```
+ ```
 
 ### 三、接口
 
