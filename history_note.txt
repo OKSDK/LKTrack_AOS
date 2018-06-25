@@ -1,3 +1,6 @@
+# v1.4.4
+1.修复 android.database.CursorWindowAllocationException: Cursor window allocation of 2048 kb failed. 问题
+
 # v1.4.3
 1.统计SDK不在获取SD卡权限，把获取SD卡权限去掉
 2.修复登出方法中传给服务器的登录时间和登出时间一样的问题
